@@ -1,0 +1,23 @@
+.button {
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: $bg-text-white;
+  background-color: $basik-green;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  width: 244px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.button--primary {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $background-grey;
+  color: $dark-grey;
+}
+
+.button--big {}

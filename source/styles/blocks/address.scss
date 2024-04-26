@@ -4,13 +4,28 @@
 
 .address__map {}
 
-.address__wrapper {}
+.address__wrapper {
+  background-color: $background-grey;
+}
 
-.address__text {}
+.address__text {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $bg-color;
+  margin: 0;
+}
 
 .address-info {}
 
-.address-info__text {}
+.address-info__text {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  margin: 0;
+}
 
-.main-footer__list {}
-
+.address-info__desc {
+  display: block;
+}
