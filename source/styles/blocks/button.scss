@@ -1,6 +1,6 @@
 .button {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: $bg-text-white;
   background-color: $basik-green;
@@ -14,8 +14,6 @@
 }
 
 .button--primary {
-  font-size: 16px;
-  line-height: 20px;
   background-color: $background-grey;
   color: $dark-grey;
 }
