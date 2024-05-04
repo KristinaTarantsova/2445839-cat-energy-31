@@ -91,8 +91,10 @@
   font-family: $primary-font;
   font-size: $title-h4;
   line-height: 16px;
-  display: block;
-  width: 139px;
+  display: flex;
+  align-items: center;
+  width: 134px;
+  gap: 15px;
   padding: 4px 0;
   color: $bg-color-dark;
   text-decoration: none;
@@ -100,7 +102,7 @@
   position: relative;
   flex-wrap: wrap;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -110,29 +112,28 @@
     background-color: $bg-borders;
   }
 
-  &::before {
+  &::after {
     content: "";
     width: 24px;
-    height: 12px;
-    position: absolute;
-    right: 17px;
-    top: 6px;
-    background-image: url("../../icons/stack.svg#advantages_arrow");
+    height: 10px;
+    display: block;
+    background-image: url("../../icons/advantages/arrow-big.svg");
     background-repeat: no-repeat;
-    background-size: 24px 12px;
+    background-size: 24px 10px;
     background-position: center;
   }
 
-  &:not([href])::before {
+  &:not([href])::after {
     fill: $bg-card-color;
     cursor: default;
     opacity: 0.3;
   }
 
-  &[href]:hover::before,
-  &[href]:focus-visible::before {
+  &[href]:hover::after,
+  &[href]:focus-visible::after {
     width: 32px;
-    background-size: 32px 15px;
+    height: 12px;
+    background-size: 32px 12px;
     right: 0;
   }
 
