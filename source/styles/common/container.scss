@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .container {
+    width: auto;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container {
+    width: 1068px;
+    padding: 0 64px;
+    margin: 0 auto;
+  }
+}

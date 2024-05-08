@@ -1,8 +1,12 @@
-.address {}
+.address {
+}
 
 .address__container {}
 
-.address__map {}
+.address__map {
+  width: 320px;
+  margin: 0 auto;
+}
 
 .address__wrapper {
   background-color: $background-grey;
@@ -10,7 +14,7 @@
 
 .address__text {
   font-family: $primary-font;
-  font-size: $title-h4;
+  font-size: $title-xs;
   line-height: 20px;
   text-transform: uppercase;
   color: $bg-color;
@@ -22,7 +26,7 @@
 
 .address-info__text {
   font-family: $secondary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   color: $dark-grey;
   line-height: 20px;
   font-style: normal;
@@ -32,7 +36,7 @@
 
 .address-info__desc {
   font-family: $secondary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   color: $dark-grey;
   line-height: 20px;
   display: block;

@@ -2,7 +2,7 @@
 
 .example__title {
   font-family: $primary-font;
-  font-size: $title-h1;
+  font-size: $title-x1;
   line-height: 40px;
   color: $bg-color-dark;
   margin: 0;
@@ -11,7 +11,7 @@
 
 .example__text {
   font-family: $secondary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   line-height: 18px;
   text-align: left;
   margin: 0;
@@ -24,7 +24,7 @@
 
 .example__achievement-desc {
   font-family: $primary-font;
-  font-size: $title-h2;
+  font-size: $title-mb;
   line-height: 24px;
   text-align: center;
   color: $bg-color-dark;
@@ -42,7 +42,7 @@
 
 .example__desc {
   font-family: $primary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   line-height: 20px;
   text-transform: uppercase;
   color: $bg-color-dark;
@@ -51,7 +51,7 @@
 
 .example__price {
   font-family: $primary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   line-height: 20px;
   text-transform: uppercase;
   color: $bg-color-dark;

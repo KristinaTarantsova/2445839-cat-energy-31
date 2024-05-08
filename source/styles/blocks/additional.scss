@@ -2,7 +2,7 @@
 
 .additional__title {
   font-size: $primary-font;
-  line-height: $title-h2;
+  line-height: $title-mb;
   color: $bg-color-dark;
   margin: 0;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@
 
 .additional__heading {
   font-family: $primary-font;
-  font-size: $title-h4;
+  font-size: $title-xs;
   line-height: 16px;
   text-transform: uppercase;
   color: $bg-card-color;
@@ -30,7 +30,7 @@
 
 .additional__desc {
   font-family: $secondary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   line-height: 14px;
   color: $dark-grey;
   flex-wrap: wrap;
@@ -38,7 +38,7 @@
 
 .additional__price {
   font-family: $secondary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   line-height: 14px;
   color: $dark-grey;
   flex-wrap: wrap;
@@ -61,7 +61,7 @@
 
 .additional__case-text {
   font-family: $secondary-font;
-  font-size: $title-h4;
+  font-size: $title-xs;
   line-height: 20px;
   color: $bg-text-white;
   background-color: $basik-green;

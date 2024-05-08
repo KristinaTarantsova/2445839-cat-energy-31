@@ -324,13 +324,13 @@
     <!-- наш адрес -->
     <section class="address">
       <h2 class="visually-hidden">Наш адрес</h2>
-      <p class="address__map">
+      <div class="address__map">
         <picture>
           <source media="(min-width:1200px)" width="1440" height="400" type="image/jpg" srcset="images/footer/location/location-desktop@1x.jpg, images/footer/location/location-desktop@2x.jpg 2x">
           <source media="(min-width:768px)" width="768" height="400" type="image/jpg" srcset="images/footer/location/location-tablet@1x.jpg, images/footer/location/location-tablet@2x.jpg 2x">
           <img src="images/footer/location/location-mobile@1x.jpg" width="320" height="362" alt="Местоположение на карте нашего магазина «Кэт энерджи»." srcset="images/footer/location/location-mobile@2x.jpg 2x">
         </picture>
-      </p>
+      </div>
       <div class="container">
         <div class="address__wrapper">
           <p class="address__text">Приглашаем к сотрудничеству дилеров!</p>
@@ -343,39 +343,29 @@
     <section class="main-footer__social">
       <div class="container">
         <h2 class="visually-hidden">Социальные сети подвала.</h2>
-        <a class="logo-link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
-          <svg class="logo-icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
-            <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
-          </svg>
-        </a>
+        <div class="name-logo">
+          <a class="name-logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
+            <svg class="name-logo__icon" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="128" height="24" viewBox="0 0 128 24">
+              <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
+            </svg>
+          </a>
+        </div>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" aria-label="Вконтакте" href="#">
-              <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="17" viewBox="0 0 27 17">
-                <use href="icons/stack.svg#social_vkontakte"></use>
-              </svg>
+            <a class="social__link social__link--vkontakte" aria-label="Вконтакте" href="#">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="Ютуб">
-              <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19">
-                <use href="icons/stack.svg#social_youtube"></use>
-              </svg>
+            <a class="social__link social__link--youtube" href="#" aria-label="Ютуб">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" aria-label="Телеграмм" href="#">
-              <svg focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-                <use href="icons/stack.svg#social_telegram"></use>
-              </svg>
+            <a class="social__link social__link--telegram" aria-label="Телеграмм" href="#">
             </a>
           </li>
         </ul>
         <div class="copy">
-          <a class="copy__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт компании «HTML Academy»"><span class="copy__text">HTML Academy</span>
-            <svg class="copy-icon" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
-              <use href="icons/stack.svg#copy_logo-html"></use>
-            </svg></a>
+          <a class="copy__link copy__link--icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт компании «HTML Academy»"><span class="copy__text">HTML Academy</span></a>
         </div>
       </div>
     </section>
