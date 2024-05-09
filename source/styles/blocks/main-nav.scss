@@ -1,10 +1,10 @@
-.main-nav {}
+// .main-nav {}
 
 .main-nav__toggle {
   width: 24px;
   height: 24px;
-  background-color: transparent;
-  background-image: url("../../icons/stack.svg#logotip_burger");
+  // background-color: transparent;
+  background-image: url("../../icons/logotypes/burger.svg");
   background-size: 24px;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,5 +30,6 @@
     display: none;
   }
 
-  &--close {}
+  // &--close {
+  // }
 }

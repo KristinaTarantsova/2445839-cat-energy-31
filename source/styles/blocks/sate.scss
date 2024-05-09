@@ -5,6 +5,7 @@
   text-transform: uppercase;
   background-color: $basik-green;
   flex-wrap: wrap;
+  display: none;
 }
 
 .sate__list {
@@ -14,9 +15,9 @@
   flex-wrap: wrap;
 }
 
-.sate__item {}
+// .sate__item {}
 
-.sate__item-current{}
+// .sate__item-current{}
 
 .sate__link {
   color: $bg-text-white;
@@ -30,14 +31,13 @@
     opacity: 0.3;
   }
 
-  &[href]:hover .copy-icon,
-  &[href]:focus-visible .copy-icon,
-  &[href]:active .copy-icon {
+  &[href]:hover,
+  &[href]:focus-visible,
+  &[href]:active {
     fill: $basik-green;
   }
 
-  &[href]:active,
-  &[href]:active .copy-icon {
+  &[href]:active {
     opacity: 0.3;
   }
 }

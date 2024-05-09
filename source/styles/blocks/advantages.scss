@@ -14,15 +14,11 @@
   padding: 30px 20px 18px;
   background-color: $background-grey;
   margin-bottom: 20px;
-
-  &--skinny {}
-
-  &--full {}
 }
 
 .advantages__title {
   font-family: $primary-font;
-  font-size: $title-h2;
+  font-size: $title-mb;
   line-height: 37px;
   margin: 0 0 29px;
   text-transform: uppercase;
@@ -80,7 +76,7 @@
 
 .advantages__text {
   font-family: $secondary-font;
-  font-size: $title-h3;
+  font-size: $title-ms;
   line-height: 18px;
   margin: 0;
   margin-bottom: 38px;
@@ -89,7 +85,7 @@
 
 .advantages__link {
   font-family: $primary-font;
-  font-size: $title-xs;
+  font-size: $title-mb;
   line-height: 16px;
   display: flex;
   align-items: center;
