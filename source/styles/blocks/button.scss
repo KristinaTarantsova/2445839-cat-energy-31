@@ -13,7 +13,6 @@
   border: none;
   cursor: pointer;
   padding: 10px 0;
-  flex-wrap: wrap;
 
   &:disabled {
     fill: $bg-card-color;
@@ -48,6 +47,9 @@
     }
   }
 
+  &--position {
+    position: absolute;
+  }
   // &--secondary {}
 
   // &--big {}

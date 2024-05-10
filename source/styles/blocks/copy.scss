@@ -1,8 +1,21 @@
 .copy {
+  padding-top: 20px;
   width: 100%;
   font-family: $secondary-font;
   font-size: $title-xs;
   line-height: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $bg-borders;
+  }
 }
 
 .copy__link {
