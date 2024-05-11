@@ -4,7 +4,11 @@
 
 .page__body {
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: $bg-text-white;
   min-height: 100%;
   margin: 0;
+  font-family: "Lato", "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  color: $dark-grey;
+  align-content: center;
 }

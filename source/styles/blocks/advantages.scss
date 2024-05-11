@@ -15,6 +15,74 @@
   padding: 30px 20px 18px;
   background-color: $background-grey;
   margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $basik-green;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      right: 10px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 372px;
+    padding: 77px 63px 53px 53px;
+    margin-bottom: 30px;
+  }
+
+  &--skinny {
+    display: inline-block;
+
+    &::after {
+      content: "";
+      width: 36px;
+      height: 50px;
+      position: absolute;
+      left: 30px;
+      top: 22px;
+      background-image: url("../../icons/stack.svg#advantages_cat-slim");
+      background-repeat: no-repeat;
+      background-size: 36px 50px;
+      background-position: left top;
+
+      /* stylelint-disable-next-line max-nesting-depth */
+      @media (min-width: $tablet-width) {
+        width: 140px;
+        height: 194px;
+        background-size: 140px 194px;
+      }
+    }
+  }
+
+  &--full {
+    display: inline-block;
+
+    &::after {
+      content: "";
+      width: 67px;
+      height: 28px;
+      position: absolute;
+      left: 12px;
+      top: 33px;
+      background-image: url("../../icons/stack.svg#advantages_cat2-slim");
+      background-repeat: no-repeat;
+      background-size: 67px 28px;
+      background-position: left center;
+    }
+  }
 }
 
 .advantages__title {
@@ -25,54 +93,29 @@
   margin: 0 0 29px;
   text-transform: uppercase;
   text-align: end;
-  position: relative;
+  padding-left: 70px;
   flex-wrap: wrap;
+  min-height: 37px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -6px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $basik-green;
-    background-position: left;
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 24px;
   }
 }
 
 .advantages__title--weight-loss {
   width: 180px;
-
-  &::after {
-    content: "";
-    width: 36px;
-    height: 50px;
-    position: absolute;
-    left: 10px;
-    top: -9px;
-    background-image: url("../../icons/stack.svg#advantages_cat-slim");
-    background-repeat: no-repeat;
-    background-size: 36px 50px;
-    background-position: left top;
-  }
 }
 
 .advantages__title--weight-gain {
-  width: 217px;
-  padding-left: 78px;
+  width: 208px;
+  flex-wrap: wrap;
 
-  &::after {
-    content: "";
-    width: 67px;
-    height: 28px;
-    position: absolute;
-    left: -8px;
-    top: 10px;
-    background-image: url("../../icons/stack.svg#advantages_cat2-slim");
-    background-repeat: no-repeat;
-    background-size: 67px 28px;
-    background-position: left center;
+  @media (min-width: $tablet-width) {
+    width: 206px;
+    min-height: 36px;
+    padding: 0;
   }
 }
 
@@ -84,16 +127,24 @@
   margin: 0;
   margin-bottom: 38px;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    min-height: 96px;
+    line-height: 24px;
+    font-size: $title-xs;
+    margin-bottom: 48px;
+  }
 }
 
 .advantages__link {
   font-family: $primary-font;
   font-size: $title-xs;
   line-height: 16px;
-  display: flex;
+  display: inline-block;
   align-items: center;
   width: 134px;
-  gap: 15px;
+  min-height: 24px;
   padding: 4px 0;
   color: $bg-color-dark;
   text-decoration: none;
@@ -109,18 +160,28 @@
     width: 240px;
     height: 1px;
     background-color: $bg-borders;
+
+    @media (min-width: $tablet-width) {
+      height: 0;
+    }
   }
 
   &::after {
     content: "";
     width: 32px;
     height: 10px;
-    display: block;
+    display: inline-block;
     mask-image: url("../../icons/advantages/arrow.svg");
     mask-repeat: no-repeat;
     mask-size: 32px 10px;
     mask-position: center;
     background-color: $bg-color-dark;
+    margin-left: 15px;
+
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+    }
   }
 
   &:not([href])::after {
@@ -141,5 +202,12 @@
   &[href]:active,
   &[href]:active::before {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-size;
+    line-height: 30px;
+    width: 165px;
+    min-height: 38px;
   }
 }
