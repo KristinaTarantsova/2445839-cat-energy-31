@@ -2,9 +2,14 @@
   font-weight: inherit;
   background-color: $bg-grey;
   padding: 25px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-text-white;
+  }
 }
 
 .example__title {
+  min-height: 40px;
   font-family: $primary-font;
   font-size: $title-x1;
   font-weight: inherit;
@@ -13,6 +18,17 @@
   margin: 0;
   flex-wrap: wrap;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .example__text {
@@ -22,6 +38,19 @@
   text-align: left;
   margin: 0 0 20px;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-xs;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__wrapper {
@@ -29,6 +58,10 @@
   justify-content: space-between;
   gap: 32px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
 }
 
 .example__achievement {
@@ -45,6 +78,12 @@
     padding-left: 17px;
     padding-right: 17px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 72px;
+    padding-top: 15px;
+  }
 }
 
 .example__achievement-desc {
@@ -57,6 +96,11 @@
   color: $bg-color-dark;
   text-transform: uppercase;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-x2;
+    line-height: 37px;
+  }
 }
 
 .example__achievement-title {
@@ -71,6 +115,16 @@
   flex-wrap: wrap;
   padding: 0 15px;
   margin: 8px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 125px;
+    min-height: 37px;
+    font-size: $title-ms;
+    line-height: 14px;
+    background-color: $bg-text-white;
+    padding: 0;
+    margin-top: 11px;
+  }
 }
 
 .example__desc {
@@ -78,12 +132,18 @@
   font-family: $primary-font;
   font-size: $title-ms;
   line-height: 20px;
-  margin: 0 auto;
   text-transform: uppercase;
   color: $bg-color-dark;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    justify-content: end;
+    font-size: $title-size;
+    line-height: 20px;
+  }
 }
 
 .example__price {
@@ -94,4 +154,10 @@
   text-transform: uppercase;
   color: $bg-color-dark;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    line-height: 14px;
+    margin-top: 9px;
+    text-align: end;
+  }
 }
