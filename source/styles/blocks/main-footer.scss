@@ -1,4 +1,10 @@
-// .main-footer {}
+// .main-footer {
+//   @media (min-width: $desktop-width) {
+//     align-content: center;
+//     margin: 0 auto;
+//   }
+// }
+
 .main-footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;

@@ -1,6 +1,18 @@
+/* stylelint-disable @stylistic/indentation */
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 *,
 * ::before,
 * ::after {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+picture,
+source {
+	display: contents;
 }
