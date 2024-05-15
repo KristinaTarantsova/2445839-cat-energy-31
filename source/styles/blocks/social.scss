@@ -9,12 +9,7 @@
   margin: 0 auto;
   list-style-type: none;
   gap: 24px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    width: 184px;
-    justify-content: center;
-  }
+  fill: $bg-social;
 }
 
 .social__item {

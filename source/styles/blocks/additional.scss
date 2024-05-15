@@ -1,25 +1,8 @@
-.additional {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  // @media (min-width: $tablet-width) {
-
-  // }
-}
-
-.additional__container {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 896px 245px;
-    gap: 80px;
-  }
-}
+// .additional {}
 
 .additional__title {
-  font-family: $primary-font;
-  font-size: $title-mb;
-  font-weight: inherit;
-  line-height: 24px;
+  font-size: $primary-font;
+  line-height: $title-h2;
   color: $bg-color-dark;
   margin: 0;
   flex-wrap: wrap;
@@ -59,17 +42,11 @@
   list-style-type: none;
 }
 
-.additional__item {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    width: 100%;
-  }
-}
+// .additional__item {}
 
 .additional__heading {
   font-family: $primary-font;
-  font-size: $title-xs;
-  font-weight: inherit;
+  font-size: $title-h4;
   line-height: 16px;
   text-transform: uppercase;
   color: $bg-card-color;

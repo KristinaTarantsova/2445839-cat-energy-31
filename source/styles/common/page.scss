@@ -3,20 +3,5 @@
 }
 
 .page__body {
-  width: 320px;
-  font-weight: 400;
-  background-color: $bg-text-white;
-  min-height: 100%;
-  margin: 0 auto;
-  font-family: "Lato", "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  color: $dark-grey;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
+  background-color: #ffffff;
 }
