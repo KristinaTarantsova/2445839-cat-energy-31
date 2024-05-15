@@ -1,8 +1,10 @@
 /* stylelint-disable max-nesting-depth */
 /* stylelint-disable @stylistic/indentation */
+
 .dignities {
   margin-bottom: 49px;
   position: relative;
+  min-height: 100%;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 47px;
@@ -23,8 +25,8 @@
     &::before {
       height: 0;
       border-bottom: none;
+    }
   }
-}
 }
 
 .dignities__title {
@@ -62,9 +64,13 @@
 .dignities__item {
   counter-increment: example 1;
   padding-left: 80px;
-  row-gap: 20px;
   position: relative;
   display: flex;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     &::before {
@@ -87,17 +93,17 @@
       height: 60px;
       background-color: $basik-green;
       position: absolute;
-      top: 15px;
-      left: 15px;
+      top: 0;
+      left: 0;
       background-repeat: no-repeat;
+      background-position: center;
+      align-content: center;
 
       @media (min-width: $tablet-width) {
         width: 80px;
         height: 80px;
         top: 40px;
         left: 0;
-        align-content: center;
-        background-position: center;
       }
     }
   }
@@ -152,7 +158,7 @@
 
       &:nth-child(2n) {
         margin-right: 0;
-      }
+    }
   }
 }
 
