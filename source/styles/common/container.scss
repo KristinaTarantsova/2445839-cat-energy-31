@@ -10,3 +10,10 @@
     padding: 0 30px;
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .container {
+    width: 1440px;
+    padding: 0 110px;
+  }
+}
