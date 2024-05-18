@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Кэт энерджи</title>
+  <title>Каталог</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="apple-touch-icon" sizes="512x512" href="favicons/android-chrome-512x512.png">
@@ -22,18 +22,20 @@
       <div class="container">
         <nav class="main-nav">
           <div class="logo">
-            <a class="logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
-              <div class="logo__icon">
-                <picture>
-                  <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
-                  <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
-                  <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
-                </picture>
-              </div>
-              <svg class="logo__icon logo__icon--name" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 128 24">
-                <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
-              </svg>
-            </a>
+            <div class="logo__wrapper">
+              <a class="logo__link" href="index.html" aria-label="Логотип компании «Кэт энерджи»">
+                <div class="logo__icon">
+                  <picture>
+                    <source media="(min-width:1200px)" width="70" height="59" srcset="images/icons/logo-desktop.svg" type="image/svg+xml">
+                    <source media="(min-width:768px)" width="60" height="50" srcset="images/icons/logo-tablet.svg" type="image/svg+xml">
+                    <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип «Супер котик».">
+                  </picture>
+                </div>
+                <svg class="logo__icon logo__icon--name" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 128 24">
+                  <use href="icons/stack.svg#logotypes_logo2-mobile"></use>
+                </svg>
+              </a>
+            </div>
             <button class="main-nav__toggle main-nav__toggle--close" type="button">
               <!-- main-nav__toggle--close Включает крестик -->
               <!-- main-nav__toggle--open включает бургер -->
@@ -52,7 +54,7 @@
     </div>
   </header>
   <!-- каталог продукции -->
-  <main class="main-catalogs">
+  <main class="main-container">
     <section class="catalog">
       <div class="container">
         <h1 class="catalog__title">Каталог продукции</h1>
