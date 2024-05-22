@@ -10,8 +10,7 @@
   min-height: 100%;
   margin: 0 auto;
   color: $dark-grey;
-  display: flex;
-  flex-direction: column;
+  align-content: center;
 
   // &--color {
   //   @media (min-width: $desktop-width) {
