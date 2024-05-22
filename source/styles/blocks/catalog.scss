@@ -1,5 +1,4 @@
 /* stylelint-disable max-nesting-depth */
-/* stylelint-disable @stylistic/indentation */
 .catalog {
   margin: 27px 0 25px;
 
@@ -44,7 +43,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
-    gap: 80px;
+    gap: 63px 80px;
   }
 }
 
@@ -63,7 +62,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 511px;
+    min-height: 429px;
     background-image: linear-gradient($bg-text-white 15%, $background-grey 15% 85%);
     border-top: none;
     padding: 0 37px 40px;
@@ -74,34 +73,50 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    min-height: 430px;
+  }
+
   &--desc {
     padding-top: 25px;
     position: relative;
 
-      &::after {
-        content: "";
-        position: absolute;
-        top: 38px;
-        right: 45%;
-        transform: rotate(90deg);
-        width: 30px;
-        height: 2px;
-        background-color: $bg-icon;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 38px;
+      right: 45%;
+      transform: rotate(90deg);
+      width: 30px;
+      height: 2px;
+      background-color: $bg-icon;
+    }
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 39px;
-        right: 45%;
-        transform: rotate(180deg);
-        width: 30px;
-        height: 2px;
-        background-color: $bg-icon;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 39px;
+      right: 45%;
+      transform: rotate(180deg);
+      width: 30px;
+      height: 2px;
+      background-color: $bg-icon;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 50px 37px 40px;
+      align-self: flex-end;
+
+      &::after {
+        width: 60px;
+        top: 80px;
+        left: 40%;
       }
 
-      @media (min-width: $tablet-width) {
-        padding: 50px 37px 40px;
-        height: 429px;
+      &::before {
+        width: 60px;
+        left: 40%;
+        top: 80px;
       }
     }
   }
@@ -154,30 +169,39 @@
 
 .catalog__icon {
   text-align: center;
+}
 
-  & img {
-    @media (min-width: $tablet-width) {
-      width: 200px;
-      height: 210px;
-    }
+.catalog__icon-img {
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 169px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
 
 .catalog__description {
   grid-area: title;
 
-  &--more {
-    padding: 0 30px;
-    margin-top: 53px;
-    margin-bottom: 21px;
-  }
-
   @media (min-width: $tablet-width) {
     margin-top: 22px;
+  }
+
+  &--more {
+    padding: 0 30px;
+    margin: 53px 0 21px;
+
+    @media (min-width: $tablet-width) {
+      margin: 110px 0 82px;
+      padding: 0 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin: 100px 0 90px;
+    }
   }
 }
 
@@ -217,8 +241,8 @@
 }
 
 .catalog__desc {
-	width: 50%;
-	float: left;
+  width: 50%;
+  float: left;
 }
 
 .catalog__price {
@@ -247,6 +271,12 @@
   text-align: center;
   flex-wrap: wrap;
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-size;
+    line-height: 24px;
+    margin-bottom: 23px;
+  }
 }
 
 .catalog__text {
@@ -256,4 +286,10 @@
   color: $dark-grey;
   margin: 0;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-xs;
+    line-height: 18px;
+    text-align: center;
+  }
 }
