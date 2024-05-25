@@ -4,9 +4,9 @@
   align-content: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    gap: 10%;
+    display: grid;
+    grid-template-columns: 174px 436px;
+    gap: 94px;
     align-items: center;
     text-align: center;
   }
