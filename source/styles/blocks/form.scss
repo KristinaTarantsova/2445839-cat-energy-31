@@ -1,0 +1,220 @@
+.form {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 65px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 75px;
+  }
+}
+
+.form__container {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.form__title {
+  min-height: 52px;
+  font-family: $primary-font;
+  line-height: 26px;
+  font-size: $title-mb;
+  font-weight: 400;
+  color: $bg-color-dark;
+  margin: 0;
+  background-color: $bg-text-white;
+  position: relative;
+  width: 187px;
+  box-shadow: -20px 0 0 0 $bg-text-white, 20px 0 0 0 $bg-text-white;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: $basik-green;
+    box-shadow: 100vw 0 0 0 $basik-green, 20px 0 0 0 $basik-green;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 36px;
+    line-height: 36px;
+    font-size: $title-x1;
+    width: fit-content;
+    padding: 0 40px 0 0;
+    box-shadow: -40px 0 0 0 $bg-text-white, 0 0 0 0 $bg-text-white;
+
+    &::before {
+      top: 20px;
+    }
+  }
+}
+
+.form__form {
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 73px;
+  }
+}
+
+.form__wrapper {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 81px;
+  }
+}
+
+.form__holderbox {
+  min-height: 45px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-areas: "lebel input input";
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__text {
+  grid-area: lebel;
+  min-height: 18px;
+  font-family: $primary-font;
+  font-size: $title-xs;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 14px 13px 13px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-size;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 10px 13px 12px 0;
+  }
+}
+
+.form__input {
+  grid-area: input;
+  min-height: 18px;
+  font-weight: 400;
+  font-family: $primary-font;
+  font-size: $title-xs;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: block;
+  padding: 11px 40px 12px 15px;
+  border: none;
+
+  & + .form__div {
+    cursor: pointer;
+  }
+
+  &:valid {
+    outline: 1px solid $bg-form;
+  }
+
+  &:invalid {
+    outline: 1px solid $bg-invalid;
+  }
+
+  &:invalid + .form__div--email::before,
+  &:invalid + .form__div--tel::after {
+    background-color: $bg-invalid;
+  }
+
+  &:valid + .form__div--email::before,
+  &:valid + .form__div--tel::after {
+    background-color: $bg-card-color;
+  }
+
+  &:hover {
+    outline: 1px solid $bg-outline;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $dark-grey;
+  }
+
+  &:focus-visible + .form__div--email::before,
+  &:focus-visible + .form__div--tel::after {
+    outline: 2px solid $dark-grey;
+    background-color: $basik-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-size;
+    line-height: 30px;
+    min-height: 30px;
+    padding-left: 20px;
+    padding-right: 60px;
+  }
+}
+
+.form__div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  right: 14px;
+
+  &--email::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $bg-card-color;
+    mask-size: center;
+    mask-repeat: no-repeat;
+    mask-image: url("../../icons/form/email-stroke.svg");
+  }
+
+  &--tel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $bg-card-color;
+    mask-size: center;
+    mask-repeat: no-repeat;
+    mask-image: url("../../icons/form/phone-stroke.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 19px;
+    right: 16px;
+  }
+}

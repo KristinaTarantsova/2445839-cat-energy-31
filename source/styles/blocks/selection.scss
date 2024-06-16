@@ -1,0 +1,153 @@
+.selection {
+  text-transform: uppercase;
+  border-top: 1px solid $bg-borders;
+  border-bottom: 1px solid $bg-borders;
+  font-family: $primary-font;
+  padding: 23px 0 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 70px 72px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 79px 0 71px;
+  }
+}
+
+.selection__container {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px 0 110px;
+  }
+}
+
+.selection__title {
+  font-weight: inherit;
+  min-height: 36px;
+  line-height: 36px;
+  font-size: $title-x1;
+  color: $bg-color-dark;
+  margin: 0;
+  margin-bottom: 37px;
+  text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    line-height: 60px;
+    font-size: $title-max;
+    min-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.selection__text {
+  width: 226px;
+  min-height: 36px;
+  margin: 0;
+  font-size: $title-ms;
+  line-height: 18px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 323px;
+    line-height: 30px;
+    font-size: $title-size;
+    min-height: 60px;
+  }
+}
+
+.selection__form {
+  margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 66px;
+  }
+}
+
+.selection__wrapper {
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selection__holderbox {
+  min-height: 45px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-areas: "lebel input input";
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.selection__label {
+  width: fit-content;
+  grid-area: lebel;
+  min-height: 45px;
+  line-height: 1.5;
+  font-size: $title-xs;
+  padding: 11px 0;
+  margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 30px;
+    font-size: $title-size;
+    line-height: 30px;
+  }
+}
+
+.selection__input {
+  grid-area: input;
+  min-height: 18px;
+  font-family: $primary-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: $title-xs;
+  line-height: 18px;
+  color: $dark-grey;
+  padding: 13px 15px;
+  outline: 1px  solid $bg-borders;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 30px;
+    line-height: 30px;
+    font-size: $title-size;
+  }
+
+  &:invalid {
+    outline: 1px solid $bg-invalid;
+  }
+
+  &:valid {
+    outline: 1px solid $bg-button;
+  }
+
+  &:not(:disabled):hover {
+    outline: 1px solid $bg-outline;
+  }
+
+  &:not(:disabled):focus-visible {
+    outline: 2px solid $dark-grey;
+  }
+}

@@ -71,6 +71,7 @@
   &[href]:focus-visible,
   &[href]:active {
     opacity: 0.6;
+    transition: transform 4s ease-in-out 1s;
   }
 
   &[href]:active {

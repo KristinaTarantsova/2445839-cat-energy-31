@@ -1,0 +1,108 @@
+.commit {
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 62px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 73px;
+  }
+}
+
+.commit__container {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.commit__title {
+  font-family: $primary-font;
+  min-height: 26px;
+  font-size: $title-mb;
+  font-weight: 400;
+  line-height: 26px;
+  color: $bg-color-dark;
+  margin: 0;
+  width: fit-content;
+  background-color: $bg-text-white;
+  box-shadow: -20px 0 0 0 $bg-text-white, 20px 0 0 0 $bg-text-white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: 0;
+    height: 2px;
+    width: 100vw;
+    background-color: $basik-green;
+    box-shadow: 100vw 0 0 0 $basik-green, 20px 0 0 0 $basik-green;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 36px;
+    line-height: 36px;
+    font-size: $title-x1;
+    padding: 0 40px 0 0;
+    box-shadow: -40px 0 0 0 $bg-text-white, 0 0 0 0 $bg-text-white;
+
+    &::before {
+      top: 20px;
+    }
+  }
+}
+
+.commit__form {
+  margin-top: 38px;
+  min-height: 150px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
+  }
+}
+
+.commit__textarea {
+  resize: none;
+  text-transform: uppercase;
+  font-family: $primary-font;
+  color: $dark-grey;
+  font-size: $title-xs;
+  line-height: 18px;
+  outline: 1px solid $bg-form;
+  min-height: 150px;
+  width: 100%;
+  border: none;
+  padding: 14px;
+
+  &::placeholder {
+    min-height: 18px;
+    color: $dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 175px;
+    padding: 11px 20px;
+
+    &::placeholder {
+      min-height: 30px;
+      font-size: $title-size;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 9px;
+  }
+}
